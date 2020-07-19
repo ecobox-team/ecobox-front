@@ -9,8 +9,8 @@ class Layout extends Component {
     render(){
         const Hidden = styled.div`  display: none; `
         const Wrapper = styled.div` 
-            position: reletive;
-            min-width: 1200px;
+            position: relative;
+            min-width: 1240px;
         `
         return(
             <Fragment>
