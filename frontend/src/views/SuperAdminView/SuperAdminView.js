@@ -10,12 +10,7 @@ import imgUser from "../../img/ico/ico_profile_admin.svg"
 import imgBtnSearch from "../../img/button/btn_search.svg"
 import imgGrayArrw from "../../img/button/btn_arrow_sel_gray.svg";
 import imgWhtArrw from "../../img/button/btn_arrow_sel_white.svg";
-import imgBlackArrw from "../../img/button/btn_arrow_sel_black.svg";
-import imgGreenArrw from "../../img/button/btn_arrow_sel_green.svg";
-import imgBlueArrw from "../../img/button/btn_arrow_sel_blue.svg";
 
-// import PerfectScrollbar from 'perfect-scrollbar'
-// import "react-perfect-scrollbar/";
 
 const Header=styled.header`
 display: block;

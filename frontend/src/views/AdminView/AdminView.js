@@ -174,27 +174,6 @@ import imgStatistics from "../../img/common/statistics_sample.svg";
     width: 100%;
   }
 `;
-  // const StatisticArea = styled.div`
-  //   position: relative;
-  //   margin-top: 24px;
-  //   width: 100%:
-  //   padding: 16px 40px;
-  //   padding-top: 64px;
-  //   border-radius: 12px;
-  //   background-color: #fff;
-  // `;
-  // const StatHeader = styled.div`
-  //   position: absolute;
-  //   top: 0;
-  //   left: 0;
-  //   padding: 16px;
-
-  //   & dl {
-  //     padding-left: 16px;
-
-  //     &:before
-  //   }
-  // `;
   const Selbox = styled.label`
     display: inline-block;
     position: ${props=> props.pos || "static"};
