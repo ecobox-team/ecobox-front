@@ -342,13 +342,13 @@ import imgStatistics from "../../img/common/statistics_sample.svg";
 class AdminView extends Component {
   state = {
     id: 0,
-    title: "치킨플러스 미들역점",
-    level: "Premium",
-    nickName: "치킨플러스",
-    totalAmount: 500,
-    currentAmount: 100,
-    weeklyUseAmount: 500,
-    weeklyGetAmount: 280, 
+    title: "",
+    level: "",
+    nickName: "",
+    totalAmount: 0,
+    currentAmount: 0,
+    weeklyUseAmount: 0,
+    weeklyGetAmount: 0, 
     isDim: false,
     containerA : 0,
     containerB : 0,
@@ -495,8 +495,6 @@ class AdminView extends Component {
       nickName,
       totalAmount,
       currentAmount,
-      weeklyUseAmount,
-      weeklyGetAmount,
       isDim,
       containerA,
       containerB,
@@ -573,19 +571,19 @@ class AdminView extends Component {
                     <Text
                       amount 
                       width="10%"
-                      color={item.type === "0" ? "#5AB8AD": "#F2994A"}
+                      color={item.type === 0 ? "#5AB8AD": "#F2994A"}
                       txtAgn={"center"}
                       fWeight="700"
                     >
-                      <em>{item.type === "0" ? "-": "+"}</em>
+                      <em>{item.type === 0 ? "-": "+"}</em>
                       {item.stock_change}
                     </Text>
                     <Text width="10%"
-                      color={item.type === "0" ? "#5AB8AD": "#F2994A"}
+                      color={item.type === 0 ? "#5AB8AD": "#F2994A"}
                       txtAgn={"right"}
                       fWeight="700"
                     >
-                      {item.type === "0" ? "사용": "수거"}
+                      {item.type === 0 ? "사용": "수거"}
                     </Text>
                   </ListItem>
                 ))}

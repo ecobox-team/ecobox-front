@@ -1,6 +1,6 @@
-import React, { Component, Fragment } from "react";
+import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import styled,{css} from "styled-components";
+import styled from "styled-components";
 import imgVisual1 from "../../img/common/img_main_visual1.png";
 
 /* style */
