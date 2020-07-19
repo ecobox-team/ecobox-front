@@ -81,11 +81,9 @@ import imgStatistics from "../../img/common/statistics_sample.svg";
         top: -4px;
         width: 24px;
         height: 24px;
-        border: 1px solid #fff;
         border-radius: 50%;
-        background: #C4C4C4 url(${imgUser}) no-repeat center;
-        background-size: 14px;
-
+        background: url(${imgUser}) no-repeat center;
+        background-size: 24px;
       }
     `}
   `;
@@ -193,11 +191,6 @@ import imgStatistics from "../../img/common/statistics_sample.svg";
       text-align: center;
     }
   `;
-  const StatGraph = styled.span``;
-  const Graph = styled.ul``;
-  const GraphItem = styled.li``;
-  const Amount = styled.span``;
-  const DateBox = styled.div``;
   const Text = styled.p`
     display: inline-block;
     width: ${props=>props.width || "auto"};
@@ -584,7 +577,7 @@ class AdminView extends Component {
                       txtAgn={"center"}
                       fWeight="700"
                     >
-                      <em>{item.type === "0" ? "+": "-"}</em>
+                      <em>{item.type === "0" ? "-": "+"}</em>
                       {item.stock_change}
                     </Text>
                     <Text width="10%"
